@@ -1,3 +1,10 @@
+## Helm-related Workshops
+
+* <https://github.com/deislabs/helm-workshop>
+* https://github.com/Microsoft/MCW-Containers-and-DevOps
+* https://github.com/Azure/kubernetes-hackfest
+
+
 ## Create an ImagePullSecret on the Kubernetes Cluster
 
 ```bash
@@ -28,7 +35,7 @@ helm template ./mychart --set imagePullSecrets={name:myimagepullsecret}
 ```
 > NOTE: Watch out for spaces after the <i>imagePullSecretes=</i> as they will cause problems
 
-***
+<br/>
 
 ### SCENARIO #2
 If your chart's deployment.yaml file looks like this...
