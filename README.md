@@ -1,11 +1,15 @@
 # helm-tricks
 An explanation of some tips and tricks related to Helm and Helm Charts.
 
-## Create an ImagePullSecret on
+## Create an ImagePullSecret on the Kubernetes Cluster
+
+```bash
+kubectl -n dev create secret docker-registry myacrname --docker-server=myacrname.azurecr.io --docker-username=*** --docker-password=*** --docker-email=ServicePrincipal@AzureRM
+```
 
 ## Helm Charts and ImagePullSecrets
 
-### SCENARIO #1:
+### SCENARIO #1
 If your chart's deployment.yaml file looks like this...
 
 ```yaml
@@ -25,7 +29,7 @@ helm template ./mychart --set imagePullSecrets={name:myimagepullsecret}
 
 ***
 
-### SCENARIO #2:
+### SCENARIO #2
 If your chart's deployment.yaml file looks like this...
 
 ```yaml
