@@ -1,7 +1,11 @@
 ## Create an ImagePullSecret on the Kubernetes Cluster
 
 ```bash
-kubectl -n dev create secret docker-registry myacrname --docker-server=myacrname.azurecr.io --docker-username=*** --docker-password=*** --docker-email=ServicePrincipal@AzureRM
+kubectl -n dev create secret docker-registry myacrname \
+  --docker-server=myacrname.azurecr.io \
+  --docker-username=*** \
+  --docker-password=*** \
+  --docker-email=ServicePrincipal@AzureRM
 ```
 
 ## Helm Charts and ImagePullSecrets
