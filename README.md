@@ -1,6 +1,3 @@
-# helm-tricks
-An explanation of some tips and tricks related to Helm and Helm Charts.
-
 ## Create an ImagePullSecret on the Kubernetes Cluster
 
 ```bash
